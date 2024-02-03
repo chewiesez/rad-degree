@@ -11,13 +11,13 @@ Created on Fri Oct 21 09:13:34 2022
 
 import math 
 def choose_func():
-    c = int(input('Enter 1 to convert RADIAN to DEGREE \nEnter 2 to convert DEGREE to RADIAN:\n'))
-    if c == 1:
-        convert_radians()
-    elif c == 2: 
-        convert_degrees()
-    else:
+    c = input('Enter 1 to convert RADIAN to DEGREE \nEnter 2 to convert DEGREE to RADIAN:\n')
+    while c != '1' and c!= '2':
         choose_func()
+    if c == '1':
+        convert_radians()
+    elif c == '2': 
+        convert_degrees()
 
 
 def convert_radians():
