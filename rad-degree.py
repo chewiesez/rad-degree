@@ -9,6 +9,7 @@ Created on Fri Oct 21 09:13:34 2022
 #python coding challenge for beginners - convert radians to degrees
  # Degree sign = u"\u00b0"
 
+import math 
 def choose_func():
     c = int(input('Enter 1 to convert RADIAN to DEGREE \nEnter 2 to convert DEGREE to RADIAN:\n'))
     if c == 1:
@@ -28,7 +29,7 @@ def convert_radians():
 def convert_degrees():
     d = float(input('Enter degrees:\n'))
     k = 180
-    r = d/k
+    r = d * math.pi/k
     print("\u03C0" + " " + str(r))
   
    
